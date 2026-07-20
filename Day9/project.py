@@ -5,7 +5,7 @@ def add_contact():
     name=input('enter name: ')    
     number=input('enter number: ')
     with open('contacts.txt','a') as file:
-        file.write('name: '+ name +'\n'+'number: '+ number +'\n')
+        file.write(f"{name},{number}\n")
     print('successful')    
 def show_contact():
     with open('contacts.txt','r') as file:
