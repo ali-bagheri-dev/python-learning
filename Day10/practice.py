@@ -1,16 +1,15 @@
 def mult(number1,number2):
-    mult=number1*number2
-    return mult
-def sum(number1,number2):
-    sum=number2+number1
-    return sum
+    return number1*number2
+
+def add(number1,number2):
+    return number2+number1
+    
 def sub(number1,number2):
-    sub= number1-number2
-    return sub
+    return  number1-number2
+    
 def div(number1,number2):
-    div=number1//number2
-    return div
-answer=0
+    return number1//number2     
+
 while True:
     while True:
         try:
@@ -19,16 +18,16 @@ while True:
         except ValueError:
             print('invalid number')
         
-            
-    try:
-        number2=int(input('enter number 2: '))
-    except ValueError:
-        print('invalid number')
-        break
+    while True:
+        try:
+            number2=int(input('enter number 2: '))
+            break
+        except ValueError:
+            print('invalid number')
     Operation=input('which one? *,/,+,-,exit: ')
-
+    
     if Operation=="+":
-        answer=sum(number1,number2)
+        answer=add(number1,number2)
         print(answer)
     elif Operation=="-":
         answer=sub(number1,number2)
@@ -44,4 +43,4 @@ while True:
             print("You cannot divide by zero.")    
     elif Operation=='exit':
         break
-    print('invalid')
+

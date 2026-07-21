@@ -1,0 +1,11 @@
+def mult(number1,number2):
+    return number1*number2
+
+def add(number1,number2):
+    return number2+number1
+    
+def sub(number1,number2):
+    return  number1-number2
+    
+def div(number1,number2):
+    return number1//number2     
